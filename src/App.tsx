@@ -24,8 +24,14 @@ function App() {
 
   return (
     <div className={Main.Main}>
-      <h1>Let's play a math game!</h1>
-      {!status ? <button onClick={startGame}>START GAME</button> : <Question1 />}
+      <h1>Mathematics PrototypeA</h1>
+      {!status ? (
+        <button className={Main.startbutton} onClick={startGame}>
+          START GAME
+        </button>
+      ) : (
+        <Question1 />
+      )}
     </div>
   );
 }

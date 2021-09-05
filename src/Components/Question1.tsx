@@ -34,7 +34,7 @@ const Question1: React.FC = (): JSX.Element => {
       setDisplayer([]);
     } else {
       setDisplayer([]);
-      const optionsObject: any = { a: 0, b: 1, c: 2, d: 3 };
+      const optionsObject: IOptions = { a: 0, b: 1, c: 2, d: 3 };
       const correctAnswerPosition: number = Math.floor(Math.random() * 4);
       switch (correctAnswerPosition) {
         case 0:
@@ -64,18 +64,24 @@ const Question1: React.FC = (): JSX.Element => {
       }
       console.log(correctAnswerPosition, optionsObject);
       for (let property in optionsObject) {
-        if (optionsObject[property] === number.x + number.y) {
+        if (optionsObject[property as keyof IOptions] === number.x + number.y) {
           setDisplayer((previous) => [
             ...previous,
-            <button key={optionsObject[property]} onClick={() => nextQuestion(1)}>
-              {optionsObject[property]}
+            <button
+              key={optionsObject[property as keyof IOptions]}
+              className={QuestionCSS.button}
+              onClick={() => nextQuestion(1)}>
+              {optionsObject[property as keyof IOptions]}
             </button>,
           ]);
         } else {
           setDisplayer((previous) => [
             ...previous,
-            <button key={optionsObject[property]} onClick={() => nextQuestion(0)}>
-              {optionsObject[property]}
+            <button
+              key={optionsObject[property as keyof IOptions]}
+              className={QuestionCSS.button}
+              onClick={() => nextQuestion(0)}>
+              {optionsObject[property as keyof IOptions]}
             </button>,
           ]);
         }
@@ -88,16 +94,18 @@ const Question1: React.FC = (): JSX.Element => {
       <div className={QuestionCSS.ScoreCard}>POINTS: {qsstate.Answer * 10}</div>
       {qsstate.Question <= 10 ? (
         <div>
-          <div>Question: {qsstate.Question} of 10</div>
-          <div>
+          <div className={QuestionCSS.wording}>Question: {qsstate.Question} of 10</div>
+          <div className={QuestionCSS.wording}>
             What is {number.x} + {number.y}?
           </div>
-          <div>Click on the correct answer :</div>
-          <div>{displayer}</div>
+          <div className={QuestionCSS.wording}>Click on the correct answer :</div>
+          <div className={QuestionCSS.buttondiv}>{displayer}</div>
         </div>
       ) : null}
 
-      {qsstate.Question > 10 ? <div>You scored {`${qsstate.Answer} out of 10`}</div> : null}
+      {qsstate.Question > 10 ? (
+        <div className={QuestionCSS.wording}>You scored {`${qsstate.Answer} out of 10`}</div>
+      ) : null}
     </div>
   );
 };
