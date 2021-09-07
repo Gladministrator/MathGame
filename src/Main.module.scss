@@ -15,6 +15,17 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 50%;
+  .operatordiv {
+    display: flex;
+    flex-direction: column;
+    button {
+      background-color: darkcyan;
+      border: 2px black solid;
+      &:hover {
+        background-color: cyan;
+      }
+    }
+  }
   h1 {
     font-family: $font;
     font-style: normal;
