@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MathGame/static/css/main.729ed760.chunk.css",
-    "main.js": "/MathGame/static/js/main.120ec9cb.chunk.js",
-    "main.js.map": "/MathGame/static/js/main.120ec9cb.chunk.js.map",
+    "main.css": "/MathGame/static/css/main.7ae0a2f5.chunk.css",
+    "main.js": "/MathGame/static/js/main.4a6d6bec.chunk.js",
+    "main.js.map": "/MathGame/static/js/main.4a6d6bec.chunk.js.map",
     "runtime-main.js": "/MathGame/static/js/runtime-main.ab91e844.js",
     "runtime-main.js.map": "/MathGame/static/js/runtime-main.ab91e844.js.map",
-    "static/js/2.0d803bc7.chunk.js": "/MathGame/static/js/2.0d803bc7.chunk.js",
-    "static/js/2.0d803bc7.chunk.js.map": "/MathGame/static/js/2.0d803bc7.chunk.js.map",
+    "static/js/2.555bca25.chunk.js": "/MathGame/static/js/2.555bca25.chunk.js",
+    "static/js/2.555bca25.chunk.js.map": "/MathGame/static/js/2.555bca25.chunk.js.map",
     "static/js/3.57321e8c.chunk.js": "/MathGame/static/js/3.57321e8c.chunk.js",
     "static/js/3.57321e8c.chunk.js.map": "/MathGame/static/js/3.57321e8c.chunk.js.map",
     "index.html": "/MathGame/index.html",
-    "static/css/main.729ed760.chunk.css.map": "/MathGame/static/css/main.729ed760.chunk.css.map",
-    "static/js/2.0d803bc7.chunk.js.LICENSE.txt": "/MathGame/static/js/2.0d803bc7.chunk.js.LICENSE.txt"
+    "static/css/main.7ae0a2f5.chunk.css.map": "/MathGame/static/css/main.7ae0a2f5.chunk.css.map",
+    "static/js/2.555bca25.chunk.js.LICENSE.txt": "/MathGame/static/js/2.555bca25.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab91e844.js",
-    "static/js/2.0d803bc7.chunk.js",
-    "static/css/main.729ed760.chunk.css",
-    "static/js/main.120ec9cb.chunk.js"
+    "static/js/2.555bca25.chunk.js",
+    "static/css/main.7ae0a2f5.chunk.css",
+    "static/js/main.4a6d6bec.chunk.js"
   ]
 }
