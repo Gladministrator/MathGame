@@ -1,20 +1,11 @@
 $font: Roboto;
 
-html,
-body {
-  margin: 0;
-  background-color: #889fa4;
-  height: 100%;
-}
-:global(#root) {
-  height: 100%;
-}
 .Main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 50%;
+  justify-content: space-around;
+  height: 100%;
   .operatordiv {
     display: flex;
     flex-direction: column;
@@ -33,7 +24,12 @@ body {
     font-size: 42px;
     text-align: center;
     color: #000000;
+    margin: 0 0 0 0;
     text-shadow: 2px 0px 0px #285ff5;
+    flex-grow: 1;
+  }
+  .selection {
+    flex-grow: 3;
   }
   .startbutton {
     font-size: 1.5rem;

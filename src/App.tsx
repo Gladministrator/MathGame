@@ -30,7 +30,7 @@ function App() {
     <div className={Main.Main}>
       <h1>Mathematics</h1>
       {!status ? (
-        <div>
+        <div className={Main.selection}>
           <h1>What would you like to do today?</h1>
           <div className={Main.operatordiv}>
             <button className={Main.startbutton} onClick={() => startGame("+")}>
