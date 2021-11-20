@@ -102,13 +102,14 @@ const Question1 = ({ setStatus }: Iproperator): JSX.Element => {
           <div className={QuestionCSS.wording}>
             What is {number.x} + {number.y}?
           </div>
+
+          <div className={QuestionCSS.wording}>Click on the correct answer :</div>
+          <div className={QuestionCSS.buttondiv}>{displayer}</div>
           <div className={QuestionCSS.replayContainer}>
             <button className={QuestionCSS.replay} onClick={() => setStatus(false)}>
               Back to selection
             </button>
           </div>
-          <div className={QuestionCSS.wording}>Click on the correct answer :</div>
-          <div className={QuestionCSS.buttondiv}>{displayer}</div>
         </div>
       ) : null}
 

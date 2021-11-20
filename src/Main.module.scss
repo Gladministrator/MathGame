@@ -13,6 +13,7 @@ $font: Roboto;
       background-color: darkcyan;
       border: 2px black solid;
       &:hover {
+        cursor: pointer;
         background-color: cyan;
       }
     }
@@ -24,12 +25,12 @@ $font: Roboto;
     font-size: 42px;
     text-align: center;
     color: #000000;
-    margin: 0 0 0 0;
+    margin: 10px 0 0 0;
     text-shadow: 2px 0px 0px #285ff5;
     flex-grow: 1;
   }
   .selection {
-    flex-grow: 3;
+    flex-grow: 5;
   }
   .startbutton {
     font-size: 1.5rem;
