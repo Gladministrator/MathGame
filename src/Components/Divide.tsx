@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import QuestionCSS from "./CoreComponent.module.scss";
 interface TrackerInt {
   Question: number;
@@ -111,14 +111,22 @@ const Divide = ({ setStatus }: Iproperator): JSX.Element => {
           </div>
           <div className={QuestionCSS.wording}>Click on the correct answer :</div>
           <div className={QuestionCSS.buttondiv}>{displayer}</div>
+          <div className={QuestionCSS.replayContainer}>
+            <button className={QuestionCSS.replay} onClick={() => setStatus(false)}>
+              Back to selection
+            </button>
+          </div>
         </div>
       ) : null}
 
       {qsstate.Question > 10 && (
         <div className={QuestionCSS.wording}>
-          You scored {`${qsstate.Answer} out of 10`}
+          You scored {`${qsstate.Answer} out of 10!`}
+          <div>{qsstate.Answer === 10 && " Good Job!"}</div>
           <div>Do you want to play again?</div>
-          <button onClick={() => setStatus(false)}>Play Again</button>
+          <button onClick={() => setStatus(false)} className={QuestionCSS.replay}>
+            Play Again
+          </button>
         </div>
       )}
     </div>

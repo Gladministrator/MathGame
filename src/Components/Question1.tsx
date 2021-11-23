@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import QuestionCSS from "./CoreComponent.module.scss";
 interface TrackerInt {
   Question: number;
@@ -116,6 +116,7 @@ const Question1 = ({ setStatus }: Iproperator): JSX.Element => {
       {qsstate.Question > 10 && (
         <div className={QuestionCSS.wording}>
           You scored {`${qsstate.Answer} out of 10`}
+          <div>{qsstate.Answer === 10 && " Good Job!"}</div>
           <div>Do you want to play again?</div>
           <button className={QuestionCSS.replay} onClick={() => setStatus(false)}>
             Play Again
