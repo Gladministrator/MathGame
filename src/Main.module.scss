@@ -10,8 +10,9 @@ $font: Roboto;
     display: flex;
     flex-direction: column;
     button {
+      color: black;
       background-color: darkcyan;
-      border: 2px black solid;
+      border: 2px solid black;
       &:hover {
         cursor: pointer;
         background-color: cyan;
